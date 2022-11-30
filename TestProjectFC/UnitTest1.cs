@@ -27,7 +27,7 @@ public class UnitTest1
     }
     [TestMethod]
     [DataRow(0, 1, 4, 0, 1, 4, 0, 0, 0, "0")]
-    [DataRow(1, 1, 4, 2, 3, 4, 4, 0, 0, "4")]
+    [DataRow(1, 1, 4, 2, 3, 4, 1, 1, 2, "-1.5")]
     public void TestSubtractCalculation(int leftWhole, int leftTop, int leftBottom,
                             int rightWhole, int rightTop, int rightBottom,
                             int expectedWhole, int expectedTop, int expectedBottom, string expectedResultDecimal)

@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FractionCalculatorWinUI3", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FractionCalculatorWinUI3.Core", "FractionCalculatorWinUI3.Core\FractionCalculatorWinUI3.Core.csproj", "{5A6F68BB-5AA1-4F3B-ABAF-417C0FDD0B3E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject2", "TestProject2\TestProject2.csproj", "{238F49CE-026D-48B0-B276-AE353EF7C3DB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestProjectFC", "TestProjectFC\TestProjectFC.csproj", "{6428AC50-2261-4268-A775-0B73DC0CE852}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -61,22 +61,22 @@ Global
 		{5A6F68BB-5AA1-4F3B-ABAF-417C0FDD0B3E}.Release|x64.Build.0 = Release|x64
 		{5A6F68BB-5AA1-4F3B-ABAF-417C0FDD0B3E}.Release|x86.ActiveCfg = Release|x86
 		{5A6F68BB-5AA1-4F3B-ABAF-417C0FDD0B3E}.Release|x86.Build.0 = Release|x86
-		{238F49CE-026D-48B0-B276-AE353EF7C3DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{238F49CE-026D-48B0-B276-AE353EF7C3DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{238F49CE-026D-48B0-B276-AE353EF7C3DB}.Debug|arm64.ActiveCfg = Debug|Any CPU
-		{238F49CE-026D-48B0-B276-AE353EF7C3DB}.Debug|arm64.Build.0 = Debug|Any CPU
-		{238F49CE-026D-48B0-B276-AE353EF7C3DB}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{238F49CE-026D-48B0-B276-AE353EF7C3DB}.Debug|x64.Build.0 = Debug|Any CPU
-		{238F49CE-026D-48B0-B276-AE353EF7C3DB}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{238F49CE-026D-48B0-B276-AE353EF7C3DB}.Debug|x86.Build.0 = Debug|Any CPU
-		{238F49CE-026D-48B0-B276-AE353EF7C3DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{238F49CE-026D-48B0-B276-AE353EF7C3DB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{238F49CE-026D-48B0-B276-AE353EF7C3DB}.Release|arm64.ActiveCfg = Release|Any CPU
-		{238F49CE-026D-48B0-B276-AE353EF7C3DB}.Release|arm64.Build.0 = Release|Any CPU
-		{238F49CE-026D-48B0-B276-AE353EF7C3DB}.Release|x64.ActiveCfg = Release|Any CPU
-		{238F49CE-026D-48B0-B276-AE353EF7C3DB}.Release|x64.Build.0 = Release|Any CPU
-		{238F49CE-026D-48B0-B276-AE353EF7C3DB}.Release|x86.ActiveCfg = Release|Any CPU
-		{238F49CE-026D-48B0-B276-AE353EF7C3DB}.Release|x86.Build.0 = Release|Any CPU
+		{6428AC50-2261-4268-A775-0B73DC0CE852}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{6428AC50-2261-4268-A775-0B73DC0CE852}.Debug|Any CPU.Build.0 = Debug|x64
+		{6428AC50-2261-4268-A775-0B73DC0CE852}.Debug|arm64.ActiveCfg = Debug|arm64
+		{6428AC50-2261-4268-A775-0B73DC0CE852}.Debug|arm64.Build.0 = Debug|arm64
+		{6428AC50-2261-4268-A775-0B73DC0CE852}.Debug|x64.ActiveCfg = Debug|x64
+		{6428AC50-2261-4268-A775-0B73DC0CE852}.Debug|x64.Build.0 = Debug|x64
+		{6428AC50-2261-4268-A775-0B73DC0CE852}.Debug|x86.ActiveCfg = Debug|x86
+		{6428AC50-2261-4268-A775-0B73DC0CE852}.Debug|x86.Build.0 = Debug|x86
+		{6428AC50-2261-4268-A775-0B73DC0CE852}.Release|Any CPU.ActiveCfg = Release|x64
+		{6428AC50-2261-4268-A775-0B73DC0CE852}.Release|Any CPU.Build.0 = Release|x64
+		{6428AC50-2261-4268-A775-0B73DC0CE852}.Release|arm64.ActiveCfg = Release|arm64
+		{6428AC50-2261-4268-A775-0B73DC0CE852}.Release|arm64.Build.0 = Release|arm64
+		{6428AC50-2261-4268-A775-0B73DC0CE852}.Release|x64.ActiveCfg = Release|x64
+		{6428AC50-2261-4268-A775-0B73DC0CE852}.Release|x64.Build.0 = Release|x64
+		{6428AC50-2261-4268-A775-0B73DC0CE852}.Release|x86.ActiveCfg = Release|x86
+		{6428AC50-2261-4268-A775-0B73DC0CE852}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
