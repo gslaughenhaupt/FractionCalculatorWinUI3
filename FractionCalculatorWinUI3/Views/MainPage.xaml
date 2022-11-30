@@ -10,16 +10,77 @@
     <Grid x:Name="ContentArea">
         <Grid.RowDefinitions>
             <RowDefinition Height="48" />
+            <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
-
-        <TextBlock
+        <StackPanel Orientation="Horizontal">
+            <TextBlock
             Grid.Row="0"
             x:Uid="Main_Title"
-            Style="{StaticResource PageTitleStyle}" />
-
-        <Grid Grid.Row="1">
+            Style="{StaticResource PageTitleStyle}" Margin="24,0" />
+            <Button x:Name="Learn" Content="Learn" Command="{x:Bind ViewModel.LearnCommand}"/>
+        </StackPanel>
+        <TeachingTip x:Name="TutorialTip1" Target="{x:Bind Add}" Title=" Choose an operation" Subtitle="Add, Subtract, Multiply or Divide" IsOpen="{x:Bind ViewModel.ShowTutorial_1, Mode=TwoWay}">
             
+        </TeachingTip>
+        <StackPanel Orientation="Vertical" Grid.Row="1" Margin="8" Background="Aquamarine">
+            <TextBlock x:Uid="Instructions_1" Style="{StaticResource BaseTextBlockStyle}" />
+            <TextBlock x:Uid="Instructions_2" Style="{StaticResource BaseTextBlockStyle}" />
+            <TextBlock x:Uid="Instructions_3" Style="{StaticResource BaseTextBlockStyle}" />
+        </StackPanel>
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <StackPanel Orientation="Vertical" Grid.Column="0" >
+                <Button x:Name="Add" Content="+" Margin="8,8,8,0" Command="{x:Bind  ViewModel.AddCommand}" ToolTipService.ToolTip="Add"  Style="{StaticResource AccentButtonStyle}" />
+                <Button x:Name="Subtract" Content="-" Margin="8,8,8,0" Command="{x:Bind  ViewModel.SubtractCommand}" ToolTipService.ToolTip="Subtract" Style="{StaticResource AccentButtonStyle}"/>
+                <Button x:Name="Multiply" Content="x" Margin="8,8,8,0" Command="{x:Bind  ViewModel.MultiplyCommand}" ToolTipService.ToolTip="Multiply" Style="{StaticResource AccentButtonStyle}"/>
+                <Button x:Name="Divide" Content="/" Margin="8,8,8,0" Command="{x:Bind  ViewModel.DivideCommand}" ToolTipService.ToolTip="Divide" Style="{StaticResource AccentButtonStyle}"/>
+            </StackPanel>
+            <StackPanel Orientation="Vertical" Grid.Column="1" VerticalAlignment="Top">
+                <StackPanel Orientation="Horizontal" >
+                    <NumberBox x:Name="LeftWhole" VerticalAlignment="Center" Value="{x:Bind ViewModel.LeftWhole, Mode=TwoWay}" 
+                           Style="{StaticResource NumberStyle}"/>
+                    <StackPanel Orientation="Vertical">
+                        <NumberBox x:Name="txtLT" Value="{x:Bind ViewModel.LeftTop, Mode=TwoWay}"  ToolTipService.ToolTip="Numerator" Style="{StaticResource NumberStyle}"/>
+                        <NumberBox x:Name="txtLB" Value="{x:Bind ViewModel.LeftBottom, Mode=TwoWay}" Style="{StaticResource NumberStyle}"/>
+                    </StackPanel>
+                </StackPanel>
+                <TextBlock Text="{x:Bind ViewModel.LeftAsDecimal, Mode=TwoWay}"/>
+            </StackPanel>
+
+            <Button Grid.Column="2" Content="{x:Bind ViewModel.Operator, Mode=TwoWay}" VerticalAlignment="Top" Margin="18" FontSize="18" FontWeight="Black"/>
+            <StackPanel Orientation="Vertical" Grid.Column="3" VerticalAlignment="Top">
+                <StackPanel Orientation="Horizontal">
+                    <NumberBox x:Name="RightWhole" VerticalAlignment="Center" Value="{x:Bind ViewModel.RightWhole, Mode=TwoWay}" 
+                           Style="{StaticResource NumberStyle}"/>
+                    <StackPanel Orientation="Vertical">
+                        <NumberBox x:Name="txtRT" Value="{x:Bind ViewModel.RightTop, Mode=TwoWay}" Style="{StaticResource NumberStyle}"/>
+                        <NumberBox x:Name="txtRB" Value="{x:Bind ViewModel.RightBottom, Mode=TwoWay}" Style="{StaticResource NumberStyle}"/>
+                    </StackPanel>
+                </StackPanel>
+                <TextBlock Text="{x:Bind ViewModel.RightAsDecimal, Mode=TwoWay}"/>
+            </StackPanel>
+
+            <Button Grid.Column="4" Content="=" Command="{x:Bind ViewModel.CalculateCommand}" VerticalAlignment="Top" Margin="18" FontSize="18" FontWeight="Black"/>
+            <StackPanel Orientation="Vertical" Grid.Column="5" VerticalAlignment="Top">
+                <StackPanel Orientation="Horizontal" >
+                    <NumberBox x:Name="ResultWhole" VerticalAlignment="Center" Value="{x:Bind ViewModel.ResultWhole, Mode=TwoWay}" 
+                           Style="{StaticResource NumberStyle}"/>
+                    <StackPanel Orientation="Vertical">
+                        <NumberBox x:Name="txtAT" Value="{x:Bind ViewModel.ResultTop, Mode=TwoWay}" Style="{StaticResource NumberStyle}"/>
+                        <NumberBox x:Name="txtAB" Value="{x:Bind ViewModel.ResultBottom, Mode=TwoWay}" Style="{StaticResource NumberStyle}"/>
+                    </StackPanel>
+                </StackPanel>
+                <TextBlock Text="{x:Bind ViewModel.ResultAsDecimal, Mode=TwoWay}"/>
+            </StackPanel>
+
         </Grid>
         
     </Grid>
